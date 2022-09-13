@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="module" defer></script>
+    <title>About Me</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="banner">
+            <h1 id="headerName"></h1>
+            <p id="headerAge"></p>
+            <p id="headerStatus">Student</p>
+        </div>
+        <nav id="navbar">
+            <ul id="list">
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="imageDivCenter">
+            <img src="" alt="" id="image" class="imageDiv">
+        </div>
+        <div class="all">
+            <h3 id="title" class="title"></h3>
+            <p id="paragraph" class="paragraph"></p>
+        </div>
+    </main>
+    <section id="section">
+        <div class="myProjects">
+            <h1>Moje Projekty: (a raczej projekt) ;)</h1>
+            <div class="gateWay">
+                <img src="img/gateway.jpg" alt="GateWay" class="imgGateWay">
+                <div>
+                    <p class="gatewayHeader">Gra Komputerowa GateWay</p>
+                    <p class="gatewayDescription">
+                        Gate-Way jest wielopoziomową, dwuwymiarową grą logiczną. Gracz wciela się w mikrorobota tworzącego układy elektroniczne za pomocą bramek logicznych, z którymi uczniowie klas informatycznych mogli się spotkać na lekcjach urządzeń techniki komputerowej. Gra powstała, aby pokazać w prosty i przyjemny dla oka sposób to, co wielu osobom wydaje się trudne i niezrozumiałe.
+                        <a href="http://gateway.zstmielec.pl" >ZAGRAJ!!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>Made with <i class='bx bxs-heart'></i> by Mariusz Jacek</p>
+    </footer>
+    <script type="text/javascript">
+        alert('Strona wykorzystuje pliki cookies');
+        confirm('Zgadzasz się na przetwarzenia danych? ');
+        var name = prompt("Jak masz na imię: ", "Zagubiony Użytkowniku");
+        var age = prompt("Podaj wiek: ", "");
+        var ageCorrect = age +" lat";
+        const headerName = document.getElementById("headerName");
+        const headerAge = document.getElementById("headerAge");
+
+        headerName.textContent = name;
+        headerAge.textContent = ageCorrect;
+        
+    </script>
+</body>
+
+</html>
